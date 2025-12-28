@@ -15,7 +15,7 @@ namespace Dal.Models
         {
             var optionsBuilder = new DbContextOptionsBuilder<IdentityDbContext>();
 
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=tf_identity;Username=postgres;Password=8963", b => 
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=tf_identity;Username=postgres;Password=8961", b => 
                 b.MigrationsAssembly("Dal"));
 
             return new IdentityDbContext(optionsBuilder.Options);
